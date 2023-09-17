@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2|La+Belle+Aurore|Open+Sans|Overpass+Mono');
 
 :root {
-  --font-pattern: 'open sans', 'segoe ui', sans-serif; /* geral */
-  --font-monospace: 'Overpass Mono', monospace; /* menus */
-  --font-cursive: 'La Belle Aurore', cursive; /* tags */
-  --font-emphasys: 'Exo 2', sans-serif; /* logo */
+  --font-pattern: 'open sans', 'segoe ui', sans-serif; 
+  --font-monospace: 'Overpass Mono', monospace; 
+  --font-cursive: 'La Belle Aurore', cursive; 
+  --font-emphasys: 'Exo 2', sans-serif; 
 
   --featured: #08FBE8;
   --inverse: #FB0853;
@@ -30,7 +30,7 @@
 
 body {
   min-height: 100vh;
-  min-height: 100vh; /* Establece la altura mínima como el 100% de la altura de la ventana (viewport) */
+  min-height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
