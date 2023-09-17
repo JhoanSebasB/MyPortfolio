@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|La+Belle+Aurore|Open+Sans|Overpass+Mono');
+
+:root {
+  --font-pattern: 'open sans', 'segoe ui', sans-serif; /* geral */
+  --font-monospace: 'Overpass Mono', monospace; /* menus */
+  --font-cursive: 'La Belle Aurore', cursive; /* tags */
+  --font-emphasys: 'Exo 2', sans-serif; /* logo */
+
+  --featured: #08FBE8;
+  --inverse: #FB0853;
+  --chocolate: #D2691E;
+
+  --bgcolor: #19191D;
+  --bgbody: #262630;
+  --bgblack: #000001;
+  --bgellipse: #111115;
+
+  --gray: #646465;
+  --clear: #FEFEFF;
+
+  --navbar: 60px;
+  --navball: 8px;
+  --animation: .4s;
+  --pagein: 2s;
+
+}
+
+/* All */
+
+
+body {
+  min-height: 100vh;
+  min-height: 100vh; /* Establece la altura mínima como el 100% de la altura de la ventana (viewport) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  overflow: hidden;
+}
+
+
+                                                    /* Barra lateral */
+.navbar-brand {
+  height: var(--navbar);
+  width: var(--navbar);
+  align-items: center;
+  color: var(--featured) !important;
+  display: flex;
+  font-family: 'Exo 2', sans-serif;
+  justify-content: center;
+}
+.navbar-center a {
+  color: var(--gray);
+  display: flex;
+  font-size: 25px;
+  width: var(--navbar);
+  height: var(--navbar);
+  align-items:center;
+  justify-content: center;
+}
+.navbar-right>li>a {
+  color: var(--gray);
+  font-size: .9em;
+}
+.navbar-right>li>a:hover {
+  color: var(--chocolate);
+}
+.navbar-dark a:hover {
+  color: var(--featured);
+}
+.navbar-dark .active {
+  color: var(--featured);
+}
+.navbar-center, 
+.navbar-center>li, 
+.navbar-right>li {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+
+
+                                                      /* Efecto hover y otras cosas de la barra lateral */
+.navbar-center{
+  transform: translateX(1em);
+
+}
+.navbar-right a {
+  transition: all var(--animation);
+}
+.navbar-center a svg {
+  -webkit-transition: all var(--animation) ease-out;
+  transition: all var(--animation) ease-out;
+}
+.navbar-center a#home-nav:after {
+  content: 'Home';
+  transform: translateX(5.2em);
+}
+.navbar-center a#skill-nav:after {
+  content: 'About Me';
+  transform: translateX(6.5em);
+}
+.navbar-center a#work-nav:after {
+  content: 'Proyects';
+  transform: translateX(6em);
+}
+
+.navbar-center a {
+  position:relative;
+
+
+}
+.navbar-center a:after {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  font-size: 10px;
+  height: 100%;
+  justify-content: center;
+  left:0;
+  letter-spacing: .6px;
+  overflow-x: hidden;
+  position: absolute;
+  -webkit-transition: all var(--animation) ease-out;
+  transition: all var(--animation) ease-out;
+}
+
+.navbar-center a:hover {
+  text-decoration: none;
+}
+
+
+.navbar-center a svg {
+  height: 100%;
+  width: 100%;
+}
+.navbar-center a:hover svg {
+  height: 0;
+  width: 0;
+
+}
+
+                                            /* Contenido home, My Proyects, skills... */
+.full-size {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  transition: opacity var(--pagein);
+  width: 100vw;
+}
+
+.content {
+  color: var(--clear);
+
+}
+.logo-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--featured);
+
+}
+.f{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+                                                 /* Home */
+li {
+  margin-top: 0;
+  display: flex;
+  
+}
+.logo-home {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.6rem;
+  margin-bottom: 0;
+  padding-left: 3rem;
+  color: white;
+}
+/*sombra de la letra J*/
+.logo-home .f, .ff {
+  margin-right: .5rem;
+  color: var(--featured);
+}
+.logo-home .f::before {
+  color: var(--inverse);
+  content: "J";
+  margin-left: .5rem;
+  margin-right: -1.7rem;
+}
+
+.extra {
+  color: var(--gray);
+  font-family: var(--font-monospace);
+  font-size: .9em;
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
+  padding-left: 3rem;
+  padding-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .sp-btn {
+  margin-left: 3rem;
+}
+.tags {
+  color: var(--gray);
+  font-family: var(--font-cursive);
+  font-size: 12pt;
+  margin: 8px 30px 3px 30px;
+  opacity: .8;
+}
+.tags p {
+  margin-bottom: .6em !important;
+}
+.tags.superior {
+  left: 70px;
+  position: absolute;
+  top: 0;
+}
+.tags.inferior {
+  bottom: 0;
+  left: 70px;
+  position: absolute;
+}
+
+                                             /* Transicion de entrada */
+.achatado {
+  height: 0 !important;
+  min-height: 0 !important;
+  opacity: 0 !important;
+  overflow-y: hidden !important;
+}
+.page-load {
+  transition: all var(--pagein);
+}
+.page-load effect {
+  height: 0;
+}
+.page-loaded {
+  transition: all var(--pagein);
+}
+.effect {
+
+  opacity: 0; 
+}
+
+                                             /*  Foto  */
+
+.mifoto{
+  width: 70%;
+  height: 70%;
+  border-radius: 30px;
+  transition: all .3s;
+  transform: translateX(-5em);
+
+
+
+}
+.mifoto:hover{
+
+  transform: translateX(-5em) scale(1.1);
+}
+                                      /* BOTONES */
+
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background: transparent;
+}
+
+
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+
+.text,.text_insta {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+  width: 160px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.Btn:hover .text,.text_insta {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+  color: grey;
+  text-decoration: none;
+
+}
+
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+.icon-whatsapp{
+  color: #25D366;
+  
+}
+.icon-whatsapp:hover{
+  
+  text-decoration: none;
+}
+.icon-instagram{
+  color: #E1306C;
+}
+/*centrar el botón y transladarlo*/
+.centrar {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 100px; 
+  transform: translateX(2em);
+}
+
+
+.centrar a {
+  margin-right: 10px; 
+}
+.centrar a:hover{
+  text-decoration: none;
+}
+
+                                              /* Texto centrado del titulo en cada navbar */
+h2 {
+
+  text-align: center;
+  
+}
+p {
+
+  text-align: center;
+  
+}
+
+                                            /* Imagenes Skills */
+.imagen-container{
+  display: flex; 
+  align-items: center; 
+  justify-content: space-evenly;
+  color: var(--gray);
+  font-family: var(--font-monospace);
+}
+.imagen {
+  width: 50px; 
+  height: 50px; 
+  transition: all .3s;
+  display: inline-block; 
+  
+}
+.imagen:hover{
+  transform: scale(1.3) ;
+}
+
+.imagenn {
+  width: 55px; 
+  height: 55px; 
+  transition: all .3s;
+  display: inline-block; 
+  margin-right: 1em;
+}
+.imagenn:hover{
+  transform: scale(1.3) ;
+}
+
+/* Estilo inicial para el contenedor */
+.imagen {
+  text-align: center; 
+  position: relative; 
+}
+
+/* Estilo para la imagen */
+.imagen img {
+  max-width: 50%; 
+}
+
+/* Estilo para el texto (oculto) */
+.imagen .texto {
+  opacity: 0;
+  display: block;
+  background-color: transparent;
+  color: #FF6600; 
+  font-size: 14px; 
+  position: absolute;
+  top: 70%; 
+  width: 100%; 
+  text-align: center; 
+  transition: opacity 0.3s ease-in-out; 
+  
+}
+
+
+.imagen:hover .texto {
+  opacity: 1;  
+  
+}
+.texto.texto_css {
+  color: #3498db; 
+}
+
+.texto.texto_python {
+  color: #4b8bbe; 
+}
+
+/* Para cambiarle el puesto al titulo (Skills)*/
+.skill{
+ font-size: 15px;
+ display: flex; 
+ align-items: center; 
+ justify-content: center;
+ color: var(--gray);
+  font-family: var(--font-monospace);
+  
+}
+.skill_all{
+  transform: translateY(-2em);
+}
+
+                                                    /*todo el about me*/
+.cardd {
+  max-width: 500px;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+.contentt {
+  padding: 1.1rem;
+}
+
+.title {
+  color: grey;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  margin-right: 10em; /* Espacio entre el título y el botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.titulo_boton {
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+}
+
+
+.car {
+  width: 190px;
+  height: 240px;
+  border-radius: 30px;
+  color: white;
+  
+}
+
+.column-container h3{
+  color: #ffffff ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Exo 2', sans-serif;
+
+}
+/* Estilo para el elemento con clase "sign" */
+.sign {
+  font-size: 18px; /* Cambia el tamaño de la fuente */
+  padding: 10px; /* Añade espacio interno alrededor del contenido */
+}
+
+/* Estilo para el elemento con clase "icon-play3" dentro de .sign */
+.sign .icon-play3 {
+  margin-right: 10px; /* Añade un margen derecho al icono */
+  color: #007bff; /* Cambia el color del icono */
+}
+.diseño-web{
+  font-size: 15px;
+}
+                                /* Tarjeta My Proyects */
+
+
+
+.card {
+  display: flex; /* Disposición en fila (horizontal) */
+  align-items: center; /* Centra verticalmente el contenido */
+  flex: 1; /* Ocupa el espacio disponible */
+  max-width: 300px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  padding: 1.1rem; /* Espacio alrededor de la tarjeta (ajusta según sea necesario) */
+}
+
+.image {
+  flex: 1; /* Ocupa el espacio disponible en la columna derecha */
+  text-align: right; /* Alinea la imagen a la derecha */
+  }
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+
+.titlee {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}

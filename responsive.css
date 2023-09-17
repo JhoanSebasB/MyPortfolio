@@ -1,0 +1,129 @@
+/* Responsive para celulares 
+--------------------------------------------------- */
+@media only screen and (max-width : 767px) {
+  .navbar-footer {
+    display:none;
+  }
+  .navbar-center li {
+    width: 25%;
+    height: var(--navbar);
+  }
+  .mifoto{
+    display: none;
+  }
+
+
+
+}
+/* Responsive para tablets o pantallas medianas
+--------------------------------------------------- */
+@media only screen and (min-width : 768px) and (max-width : 970px) {
+  .navbar-brand, .navbar-collapse, .navbar-footer { margin:0 }
+  .navbar-collapse, .navbar-dark, .navbar-footer, .navbar-right {
+    justify-content: center;
+    align-itens:middle;
+    height: var(--navbar);
+  }
+  .navbar-center li a {
+    margin: 0 5vh;
+  }
+  .navbar-right a {
+    padding: 15px !important;
+  }
+  .column-container{
+    transform: translateY(2em);
+  }
+  
+}
+
+/* FULL 
+--------------------------------------------------- */
+@media only screen and (min-width : 992px) {
+  .column-container{
+    transform: translatey(4em) translateX(5em);
+  }
+  .about-me{
+    transform: translateX(-8em) translateY(2em);
+
+
+  }
+  .skill{
+    transform: translateX(-8.7em) translateY(5em);
+    
+  }
+  .imagen-container{
+    transform: translateX(-8em) translateY(5em);
+
+  }
+  .icon-play3{
+    transform: translateX(-2em);
+  }
+  .diseño-web{
+    transform: translateX(-1.5em);
+  }
+  
+  h3{
+    transform: translateX(-.3em);
+  }
+  
+  .navbar-dark {
+    height: 100%;
+    width: var(--navbar);
+    position: fixed;
+    width:var(--navbar);
+    flex-direction: column;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-center {
+    top: 50%;
+    position: absolute;
+    height: 300px;
+    margin-top: -150px;
+    left: 0px;
+    width: var(--navbar);
+    flex-direction: column;
+  }
+  .navbar-center li {
+    height: 75px;
+  }
+  .navbar-dark .navbar-nav > li {
+    width: var(--navbar);
+  }
+  .navbar-right {
+    float: right!important;
+  }
+  .navbar-right>li {
+    height: 50px;
+  }
+}
+
+/* Efecto hover barra lateral para celulares */
+@media only screen and (max-width : 991px) {
+  .navbar-center a:after {
+    height: 0;
+    width: 100%;
+    overflow:hidden;
+    opacity: 0;
+  }
+  .navbar-center a:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+
+}
+/*  Efecto hover barra lateral para pc */
+@media only screen and (min-width : 992px) {
+  .navbar-center a:after {
+    width: 0;
+    opacity: 0;
+  }
+  .navbar-center a:hover:after {
+    width: 100%;
+    opacity: 1;
+
+  }
+}
+
