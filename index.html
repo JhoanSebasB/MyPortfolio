@@ -150,7 +150,12 @@
           <div class="column-container">
             <div class="car">
               <h3>Certificates</h3>
-              <div class="sign"><span class="icon-play3"></span ><div class="diseño-web">I have completed various online courses, including those from YouTube, to enhance my skills</div></div>
+              <div class="sign">
+                <span class="icon-play3"></span>
+                <div class="diseño-web">I have completed various online courses, including those from YouTube, to enhance my skills</div>
+                <button id="descarga">Descargar Certificado</button>
+              </div>
+
 
             </div>
 
@@ -207,7 +212,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+  <script>
+document.getElementById('descarga').addEventListener('click', function() {
+  // Cambia la URL a la ubicación de tu certificado en el servidor o en la nube
+  var certificadoURL = 'C:\Users\USER\Desktop\descarga.pdf';
   
+  // Crea un elemento <a> (enlace) invisible
+  var enlace = document.createElement('a');
+  enlace.href = certificadoURL;
+  enlace.download = 'descarga.pdf'; // Nombre del archivo que se descargará
+  
+  // Simula un clic en el enlace para iniciar la descarga
+  enlace.click();
+});
+</script>
+
 
   <script src="script.js"></script>
 </body>
