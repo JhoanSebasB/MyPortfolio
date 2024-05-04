@@ -354,7 +354,10 @@ li {
   text-decoration: none;
 }
 .icon-instagram{
-  color: #E1306C;
+  color: #dd2a7b;
+}
+.icon-envelop{
+  color: #db4437;
 }
 /*centrar el botón y transladarlo*/
 .centrar {
