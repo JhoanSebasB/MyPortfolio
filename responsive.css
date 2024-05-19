@@ -1,27 +1,17 @@
 /* Responsive para celulares 
 --------------------------------------------------- */
-@media only screen and (max-width : 767px) {
-  .navbar-footer {
-    display:none;
-  }
-  .navbar-center li {
-    width: 25%;
-    height: var(--navbar);
-  }
-  .mifoto{
-    display: none;
-  }
 
-
-
-}
 /* Responsive para tablets o pantallas medianas
 --------------------------------------------------- */
-@media only screen and (min-width : 768px) and (max-width : 970px) {
+@media only screen  and (max-width : 970px) {
   .navbar-brand, .navbar-collapse, .navbar-footer { margin:0 }
   .navbar-collapse, .navbar-dark, .navbar-footer, .navbar-right {
     justify-content: center;
     align-itens:middle;
+    height: var(--navbar);
+  }
+  .navbar-center li {
+    width: 25%;
     height: var(--navbar);
   }
   .navbar-center li a {
@@ -33,6 +23,13 @@
   .column-container{
     transform: translateY(2em);
   }
+  .mifoto{
+    display: none;
+  }
+  .navbar-footer {
+    display:none;
+  }
+}
   
 }
 
