@@ -134,4 +134,20 @@
 
   }
 }
+@media only screen and (min-width: 1240px)  {
+  
+  .about-me{
+    transform: translateX(20em) translateY(2em);
+
+
+  }
+  .skill{
+    transform: translateX(20.7em) translateY(5em);
+    
+  }
+  .imagen-container{
+    transform: translateX(20em) translateY(5em);
+
+  }
+}
 
