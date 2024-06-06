@@ -84,7 +84,7 @@ body {
 }
 
 
-                                                      /* Efecto hover y otras cosas de la barra lateral */
+                       /* Efecto hover y otras cosas de la barra lateral */
 .navbar-center{
   transform: translateX(1em);
 
@@ -144,7 +144,7 @@ body {
 
 }
 
-                                            /* Contenido home, My Proyects, skills... */
+                               /* Contenido home, My Proyects, skills... */
 .full-size {
 
   display: flex;
@@ -457,6 +457,10 @@ p {
   color: #4b8bbe; 
 }
 
+.texto.texto_unity {
+  color: #414141; 
+}
+
 /* Para cambiarle el puesto al titulo (Skills)*/
 .skill{
  font-size: 15px;
@@ -541,6 +545,7 @@ p {
 
 
 .card {
+  
   display: flex; /* Disposición en fila (horizontal) */
   align-items: center; /* Centra verticalmente el contenido */
   flex: 1; /* Ocupa el espacio disponible */
