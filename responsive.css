@@ -1,5 +1,15 @@
 /* Responsive para celulares 
 --------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .navbar-center li {
+    width: 25%;
+    height: var(--navbar);
+  }
+  .navbar-center li a {
+    margin: 0 5vh;
+  }
+}
+
 
 /* Responsive para tablets o pantallas medianas
 --------------------------------------------------- */
@@ -10,7 +20,13 @@
     align-itens:middle;
     height: var(--navbar);
   }
-  
+  .navbar-center li {
+    width: 25%;
+    height: var(--navbar);
+  }
+  .navbar-center li a {
+    margin: 0 5vh;
+  }
   .navbar-right a {
     padding: 15px !important;
   }
@@ -32,16 +48,16 @@
     transform: translatey(4em) translateX(5em);
   }
   .about-me{
-    transform: translateX(-8em) translateY(2em);
+    transform: translateX(11em) translateY(2em);
 
 
   }
   .skill{
-    transform: translateX(-8.7em) translateY(5em);
+    transform: translateX(11.7em) translateY(5em);
     
   }
   .imagen-container{
-    transform: translateX(-8em) translateY(5em);
+    transform: translateX(11em) translateY(5em);
 
   }
   .icon-play3{
@@ -85,6 +101,9 @@
   }
   .navbar-right>li {
     height: 50px;
+  }
+  .timeline-small{
+    transform: translateX(10em) 
   }
 }
 
