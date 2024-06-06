@@ -103,7 +103,7 @@
     height: 50px;
   }
   .timeline-small{
-    transform: translateX(10em) 
+    transform: translateX(10em) translateY(-1em);
   }
 }
 
