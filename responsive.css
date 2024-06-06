@@ -10,13 +10,7 @@
     align-itens:middle;
     height: var(--navbar);
   }
-  .navbar-center li {
-    width: 25%;
-    height: var(--navbar);
-  }
-  .navbar-center li a {
-    margin: 0 5vh;
-  }
+  
   .navbar-right a {
     padding: 15px !important;
   }
@@ -29,8 +23,6 @@
   .navbar-footer {
     display:none;
   }
-}
-  
 }
 
 /* FULL 
