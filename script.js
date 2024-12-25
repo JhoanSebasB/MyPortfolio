@@ -1,3 +1,4 @@
+
 // Se ejecuta cuando el documento HTML se ha cargado completamente
 $(document).ready(function () {
     // Agrega la clase 'effect' a elementos con la clase 'page-load'
@@ -57,3 +58,35 @@ function typeWriter(elemento) {
       });
     }, 100);
 }
+
+
+new Swiper('.card-wrapper', {
+    loop: true,
+    spaceBetween:30,
+  
+    // Pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true
+      
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    breakpoints:{
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        },
+    }
+  });
